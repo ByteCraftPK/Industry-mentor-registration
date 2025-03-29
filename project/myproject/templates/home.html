@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        a {
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is the Home Page</h1>
+    <p>Check out my <a href="/about">About</a></p>
+
+    <div class="container">
+        <a href="{% url 'register' %}" class="button">Register as Industry Mentor</a>
+        <a href="{% url 'admin:index' %}" class="button">Login as Admin</a>
+    </div>
+</body>
+</html>
